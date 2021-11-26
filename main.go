@@ -22,7 +22,7 @@ func main() {
 	}
 
 	{
-		result, err := request(rpc.Method.GetBlockByNumber, []interface{}{int64(10)})
+		result, err := request(rpc.Method.GetBlockByNumber, []interface{}{int64(10), true})
 		if err != nil {
 			panic(err)
 		}
